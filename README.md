@@ -27,7 +27,7 @@ options:
 ##### cifar10
 ```
 # FedAvg
-python main.py --federated_type fedavgy --dataset cifar10 --data_dist iid
+python main.py --federated_type fedavg --dataset cifar10 --data_dist iid
 # AFL
 python main.py --federated_type afl --dataset cifar10 --data_dist iid
 ```
