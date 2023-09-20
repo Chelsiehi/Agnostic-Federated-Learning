@@ -27,14 +27,14 @@ options:
 ##### cifar10
 ```
 # FedAvg
-python -u main.py --dataset cifar10 --from_csv iid--federated_type fedavg >> log/cifar10avg.log
+python -u main.py --dataset cifar10 --from_csv iid --federated_type fedavg >> log/cifar10avg.log
 # AFL
 python -u main.py --dataset cifar10 --from_csv iid --federated_type afl  >> log/cifar10afl.log
 ```
 ##### mnist
 ```
 # FedAvg
-python -u main.py --dataset mnist --from_csv iid--federated_type fedavg >> log/mnistavg.log
+python -u main.py --dataset mnist --from_csv iid --federated_type fedavg >> log/mnistavg.log
 # AFL
 python -u main.py --dataset mnist --from_csv iid --federated_type afl  >> log/mnistafl.log
 ```
@@ -42,7 +42,7 @@ python -u main.py --dataset mnist --from_csv iid --federated_type afl  >> log/mn
 ##### fashionmnist
 ```
 # FedAvg
-python -u main.py --dataset fashionmnist --from_csv iid--federated_type fedavg >> log/fashionmnistavg.log
+python -u main.py --dataset fashionmnist --from_csv iid --federated_type fedavg >> log/fashionmnistavg.log
 # AFL
 python -u main.py --dataset fashionmnist --from_csv iid --federated_type afl  >> log/fashionmnistafl.log
 ```
