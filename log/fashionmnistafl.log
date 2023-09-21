@@ -1,0 +1,27 @@
+GPU will be used for training
+
+dataset: fmnist
+federated_type: afl
+model: cnn
+n_clients: 3
+global_epochs: 30
+local_epochs: 5
+batch_size: 32
+on_cuda: 0
+optimizer: sgd
+lr: 0.01
+data_dist: from_csv
+from_csv: iid
+seed: 1
+seed_num: 0
+drfa_gamma: 0.01
+Class distribution of id:0
+train [2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000]
+test [333, 333, 333, 333, 333, 333, 333, 333, 333, 333]
+Class distribution of id:1
+train [2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000]
+test [333, 333, 333, 333, 333, 333, 333, 333, 333, 333]
+Class distribution of id:2
+train [2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000, 2000]
+test [334, 334, 334, 334, 334, 334, 334, 334, 334, 334]
+| Client id:0 | Test_Loss: 2.302 | Test_Acc: 9.039
