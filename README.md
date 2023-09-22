@@ -22,50 +22,25 @@ options:
 
 ### Run experiment
 
-#### IID
-
 ##### cifar10
 ```
 # FedAvg
-python main.py --federated_type fedavgy --dataset cifar10 --data_dist iid
+python -u main.py --dataset cifar10 --from_csv iid --federated_type fedavg >> log/cifar10avg.log
 # AFL
-python main.py --federated_type afl --dataset cifar10 --data_dist iid
+python -u main.py --dataset cifar10 --from_csv iid --federated_type afl  >> log/cifar10afl.log
+mnist
 ```
 ##### mnist
 ```
 # FedAvg
-python main.py --federated_type fedavg --dataset mnist --data_dist iid
+python -u main.py --dataset mnist --from_csv iid --federated_type fedavg >> log/mnistavg.log
 # AFL
-python main.py --federated_type afl --dataset mnist --data_dist iid
-```
-
-##### fashionmnist
-```
-# FedAvg
-python main.py --federated_type fedavg --dataset fmnist --data_dist iid
-# AFL
-python main.py --federated_type afl --dataset fmnist --data_dist iid
-```
-
-#### From CSV
-##### cifar10
-```
-# FedAvg
-python main.py --federated_type fedavg --dataset cifar10 --data_dist from_csv --from_csv sample2
-# AFL
-python main.py --federated_type afl --dataset cifar10 --data_dist from_csv --from_csv sample2
-```
-##### mnist
-```
-# FedAvg
-python main.py --federated_type fedavg --dataset mnist --data_dist from_csv --from_csv sample2
-# AFL
-python main.py --federated_type afl --dataset mnist --data_dist from_csv --from_csv sample2
+python -u main.py --dataset mnist --from_csv iid --federated_type afl  >> log/mnistafl.log
 ```
 ##### fashionmnist
 ```
 # FedAvg
-python main.py --federated_type fedavg --dataset fmnist --data_dist from_csv --from_csv sample2
+python -u main.py --dataset fashionmnist --from_csv iid --federated_type fedavg >> log/fashionmnistavg.log
 # AFL
-python main.py --federated_type afl --dataset fmnist --data_dist from_csv --from_csv sample2
+python -u main.py --dataset fashionmnist --from_csv iid --federated_type afl  >> log/fashionmnistafl.log
 ```
